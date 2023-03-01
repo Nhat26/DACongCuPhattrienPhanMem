@@ -11,6 +11,8 @@ async function connectToDb() {
     const database = client.db(dbName);
 
     db.TaiKhoan = database.collection("TaiKhoan");
+    db.VatTu = database.collection("VatTu");
+    db.HoaDon = database.collection("HoaDon");
     return 'done.';
 }
 
