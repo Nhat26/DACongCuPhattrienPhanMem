@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const { connectToDb, db } = require('./db');
 const VatTuRouter = require("./Routers/VatTuRouter");
 const HoaDonRouter = require("./Routers/HoaDonRouter");
-const TaiKhoanRouter = require("./Routers/TaiKhoanRouter");
+const TinNhanRouter = require("./Routers/TinNhanRouter");const TaiKhoanRouter = require("./Routers/TaiKhoanRouter");
 var cors = require('cors');
 
 
@@ -14,6 +14,7 @@ app.use(express.json());
 app.use("/TaiKhoan", TaiKhoanRouter);
 app.use("/VatTu", VatTuRouter);
 app.use("/HoaDon", HoaDonRouter);
+app.use("/TinNhan", TinNhanRouter);
 app.get('/', (req, res) => {
     res.json('Hello world')
 })
