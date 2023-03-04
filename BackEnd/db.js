@@ -14,6 +14,7 @@ async function connectToDb() {
     db.VatTu = database.collection("VatTu");
     db.TinNhan = database.collection("TinNhan");
     db.HoaDon = database.collection("HoaDon");
+    db.ThongBao=database.collection("ThongBao");
     return 'done.';
 }
 
