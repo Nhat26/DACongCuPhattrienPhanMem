@@ -18,6 +18,7 @@ async function connectToDb() {
     db.Luong=database.collection("Luong");
     db.LuongQL=database.collection("LuongQL");
     db.PhieuDKChuyen= database.collection("PhieuDKChuyen");
+    db.NhanVien = database.collection("NhanVien");
     return 'done.';
 }
 

@@ -10,6 +10,7 @@ const ThongBaoRouter = require("./Routers/ThongBaoRouter");
 const LuongRouter = require("./Routers/LuongRouter");
 const LuongQLRouter = require("./Routers/LuongQLRouter");
 const PhieuDKChuyenRouter = require("./Routers/PhieuDKChuyenRouter");
+const NhanvienRouters = require('./Routers/NhanvienRouter');
 var cors = require('cors');
 
 
@@ -17,6 +18,7 @@ app.use(cors());
 app.use(bodyParser.json({ extended: true }));
 app.use(express.json());
 app.use("/TaiKhoan", TaiKhoanRouter);
+app.use("/Nhanvien", NhanvienRouters);
 app.use("/VatTu", VatTuRouter);
 app.use("/HoaDon", HoaDonRouter);
 app.use("/TinNhan", TinNhanRouter);
