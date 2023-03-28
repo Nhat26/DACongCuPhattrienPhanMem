@@ -13,7 +13,7 @@ function ChiNhanh() {
   const navigate = useNavigate();
   const [cacChiNhanh, setCacChiNhanh] = useState([]);
   const [Loadchinhnhanh, setLoadchinhnhanh] = useState(false);
-  const [isToggled, setisToggled] =useState(false);
+  const [isToggled, setisToggled] = useState(false);
 
   const usersCollectionRef = collection(db, "CacChiNhanh");
 
@@ -24,11 +24,11 @@ function ChiNhanh() {
     // console.log(arr[arr.length - 1]);
     let ma = arr[arr.length - 1] + 1;
     let so = `${arr[arr.length - 1] + 1}`;
-    await addDoc(usersCollectionRef, {MaChiNhanh: ma, SoChiNhanh: so});
+    await addDoc(usersCollectionRef, { MaChiNhanh: ma, SoChiNhanh: so });
     setLoadchinhnhanh(true);
   };
-  const Vaochinhanh = (e)=>{
-    var a=e
+  const Vaochinhanh = (e) => {
+    var a = e
     localStorage.setItem("TenChiNhanh", a)
     console.log("machinhanh", e)
     setisToggled(true);
@@ -36,9 +36,9 @@ function ChiNhanh() {
 
 
   }
-  const hamtuchay = () =>{
-    cacChiNhanh.map((a)=>
-    localStorage.setItem("SLCHINHANH", a.SoChiNhanh))
+  const hamtuchay = () => {
+    cacChiNhanh.map((a) =>
+      localStorage.setItem("SLCHINHANH", a.SoChiNhanh))
   }
   useEffect(() => {
     hamtuchay();
@@ -81,15 +81,15 @@ function ChiNhanh() {
             />
             <h4 className={styles.mainContent}>Chi Nhanh {chiNhanh.SoChiNhanh}</h4>
           </div>
-          
+
         ))}
 
         <div>
-        {/* {isToggled && <Homeindex isToggled={isToggled}/>} */}
+          {/* {isToggled && <Homeindex isToggled={isToggled}/>} */}
         </div>
       </div>
-      
-      
+
+
     </>
   );
 }
