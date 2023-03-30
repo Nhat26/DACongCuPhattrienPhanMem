@@ -47,10 +47,6 @@ const ChiTietSanPham = ({ ThongKeDoanhThu, closemodal, Data3, MaNguoibanhd, Ngay
 
                     })
 
-
-
-
-
                 }
             })
             .catch(err => {
