@@ -20,6 +20,7 @@ async function connectToDb() {
     db.PhieuDKChuyen= database.collection("PhieuDKChuyen");
     db.NhanVien = database.collection("NhanVien");
     db.PhieuChamCong = database.collection("PhieuChamCong");
+    db.LichSuChuyen = database.collection("LichSuChuyen");
     return 'done.';
 }
 
