@@ -50,8 +50,6 @@ const BanHang = ({ handleclickgiohang }) => {
     const [Delete, setDelete] = useState(false)
 
 
-
-
     var Tenchinhanh = localStorage.getItem("TenChiNhanh");
     console.log("chinhanh", Tenchinhanh)
     var ChiNhanh = Tenchinhanh;
