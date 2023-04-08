@@ -22,6 +22,7 @@ async function connectToDb() {
     db.PhieuChamCong = database.collection("PhieuChamCong");
     db.LichSuChuyen = database.collection("LichSuChuyen");
     db.PhieuChuyen = database.collection("PhieuChuyen");
+    db.QuanLy = database.collection("QuanLy");
     return 'done.';
 }
 

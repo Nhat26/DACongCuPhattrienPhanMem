@@ -14,6 +14,7 @@ const NhanvienRouters = require('./Routers/NhanvienRouter');
 const PhieuChamCongRouter = require('./Routers/PhieuChamCongRouter');
 const LichSuChuyenRouter = require("./Routers/LichSuChuyenRouter");
 const PhieuChuyenRouter = require("./Routers/PhieuChuyenRouter")
+const QuanLyRouter = require("./Routers/QuanlyRouter")
 var cors = require('cors');
 
 
@@ -32,6 +33,7 @@ app.use("/LuongQL",LuongQLRouter);
 app.use("/PhieuDKChuyen",PhieuDKChuyenRouter);
 app.use("/PhieuChamCong",PhieuChamCongRouter);
 app.use("/PhieuChuyenRouter",PhieuChuyenRouter);
+app.use("/PhieuChuyenRouter",QuanLyRouter);
 app.get('/', (req, res) => {
     res.json('Hello world')
 })
